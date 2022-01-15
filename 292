@@ -26,6 +26,16 @@
 # print(x4)
 # print(x5)
 #print(x6c)
+# 연산자
+# +
+# -
+# *
+# //
+# %
+# 비교연산자
+# == 반드시 같다
+# !=는 같지 않다
+# >= 또는 <=는 방향에 따라서 크거나 같다, 작거나 같다
 
 # count = 특정 글자가 몇게 있는지
 # a = 'hobby'
@@ -92,10 +102,6 @@
 # b = int(input())
 # if a > b:
 #     print("a는 b보다 크다")
-# 비교연산자
-# == 반드시 같다
-# !=는 같지 않다
-# >= 또는 <=는 방향에 따라서 크거나 같다, 작거나 같다
 
 # and = 조건이 모두 참일 때 참이 된다
 # a = 6
@@ -153,4 +159,119 @@
 #     print("F")
 
 # 문제: 윤년
-a = int(input()) == 1
+# a = int(input())
+# if (a%4==0 and a%100!=0) or a%400==0:
+#     print("1")
+# else:
+#     print("0")
+
+# 문제: 사분면 고르기
+# x = int(input())
+# y = int(input())
+# if 0<=x and 0<=y:
+#     print(1)
+# elif 0>=x and 0<=y:
+#     print(2)
+# elif 0<=x and 0>=y:
+#     print(3)
+# else:
+#     print(4)
+# 선생님 이 하신 방법
+# x = int(input())
+# y = int(input())
+# if x > 0:
+#     if y > 0:
+#         print(1)
+#     elif y < 0:
+#         print(4)
+# elif x < 0:
+#     if y > 0:
+#         print(2)
+#     elif y < 0:
+#         print(3)
+
+# 문제:알람 시계
+# H = int(input())
+# M = int(input())
+# if M =
+
+# 문제:계산기
+# a = int(input())
+# b = int(input())
+# c = input()
+# if c == "+":
+#     print(a+b)
+# elif c == "-":
+#     print(a-b)
+# elif c == "*":
+#     print(a*b)
+# elif c == "//":
+#     print(a//b)
+# elif c == "%":
+#     print(a%b)
+# else:
+#     print("error")
+
+# 문제:정각 판별하는 문제
+# a = input()
+# if a[3] == "0" and a[4] == "0":
+#     print("정각이 입니다")
+# else:
+#     print("정각이 아닙니다")
+# # 선생님 이 하신 방법
+# time = input()
+# if time[3] and time[4] == "0":
+#     print("정각입니다")
+# else:
+#     print("정각이 아닙니다")
+# 다른 방법1
+# time = input()
+# if time[-2] and time[-1] == "0":
+#     print("정각입니다")
+# else:
+#     print("정각이 아닙니다")
+# 다른 방법2
+# time = input()
+# if time[3:] == "00":
+#     print("정각입니다")
+# else:
+#     print("정각이 아닙니다")
+
+# while문 = 조건이 맞으면 계속 실행
+# 예시
+# treeHit = 0         # 초기값
+# while treeHit < 10:    # 조건
+#     treeHit = treeHit + 1     # 내부값 갱신
+#     treeHit += 1             # 내부값 갱신
+#     print("나무를 %d번 찍었습니다." %treeHit)
+#     if treeHit == 10:             # 세부적인 조건
+#         print("나무 넘어갑니다")
+# while - break문
+# while문을 빠져나가고 싶을 때 사용한다
+# coffee = 10
+# while True:
+#     money = int(input("돈을 넣어 주세요 : "))
+#     if money == 300:
+#          print("커피를 줍니다.")
+#          coffee -= 1
+#     elif money > 300:
+#        print("거스름돈 %d를 주고 커피를 줍니다." %(money-300))
+#        coffee -= 1
+#     else:
+#         print("돈을 다시 돌려주고 커피를 주지 않습니다.")
+#     print("남은 커피의 양은 %d개 입니다." %coffee)
+#     if coffee == 0:
+#         print("커피가 다 떨어졌습니다. 판매를 중지 합니다.")
+#         break
+
+# m = int(input("돈을 넣어줘 : "))
+# print(m)
+# while문 - continue
+# while문 에 continue 조건이 맞으면 while 부터 다시 시작
+# a = 0
+# while a < 10:
+#     a = a+1
+#     if a%2 == 0:
+#         continue
+#     print(a)
+# for문 = 일장한 횟수 만큼 실
